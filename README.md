@@ -1,4 +1,4 @@
-# financial-registration-system
+# HrU CEP Finance
 Finance and Registration System for Hru CEP
 
 ## Introduction
