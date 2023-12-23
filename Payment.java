@@ -156,6 +156,15 @@ public class Payment extends javax.swing.JFrame {
         taskbar.add(Exit);
         Exit.setBounds(1010, 0, 30, 60);
 
+        // customize logout button
+        logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("logout.png"))); 
+        logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        logout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                logoutMouseClicked(evt);
+            }
+        });
+
         // customize header text
         text.setFont(new java.awt.Font("Domino Jack", 0, 24)); 
         text.setText("Student Payment System");
