@@ -425,5 +425,10 @@ public class Payment extends javax.swing.JFrame {
         Student_Name.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
         Student_Name.setForeground(new java.awt.Color(255, 255, 255));
         Student_Name.setText("Student Name :");
+
+        // customize batch text
+        Batch.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
+        Batch.setForeground(new java.awt.Color(255, 255, 255));
+        Batch.setText("Batch No:");
     }
 }
