@@ -839,4 +839,16 @@ public class Payment extends javax.swing.JFrame {
             ExaminationField.setText("0");
         }
     }
+
+    // add library action listener
+    private void LibraryCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (LibraryCheck.isSelected()) {
+            LibraryFeeFeild.setEditable(true);
+            LibraryFeeFeild.setText("2000");
+            LibraryFeeFeild.requestFocus();
+        } else {
+            LibraryFeeFeild.setEditable(false);
+            LibraryFeeFeild.setText("0");
+        }
+    }
 }
