@@ -212,5 +212,16 @@ public class Payment extends javax.swing.JFrame {
                 SemesterCheckActionPerformed(evt);
             }
         });
+
+        // customize lab fee checkbox
+        LabCheck.setBackground(new java.awt.Color(255, 255, 255));
+        LabCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        LabCheck.setForeground(new java.awt.Color(51, 51, 51));
+        LabCheck.setText("Lab Fee");
+        LabCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LabCheckActionPerformed(evt);
+            }
+        });
     }
 }
