@@ -286,5 +286,11 @@ public class Payment extends javax.swing.JFrame {
         ReAdmissionField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         ReAdmissionField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ReAdmissionField.setText("0");
+
+        // customize semsester fee field
+        SemesterField.setEditable(false);
+        SemesterField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        SemesterField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        SemesterField.setText("0");
     }
 }
