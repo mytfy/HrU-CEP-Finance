@@ -435,5 +435,10 @@ public class Payment extends javax.swing.JFrame {
         RegNo.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
         RegNo.setForeground(new java.awt.Color(255, 255, 255));
         RegNo.setText("Registation No:");
+
+        // customize roll number text
+        Roll.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
+        Roll.setForeground(new java.awt.Color(255, 255, 255));
+        Roll.setText("Roll No:");
     }
 }
