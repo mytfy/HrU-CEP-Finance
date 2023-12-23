@@ -638,4 +638,46 @@ public class Payment extends javax.swing.JFrame {
         // pack all components
         pack();
     }
+
+    // add resetACtion listener
+        private void ResetActionPerformed(java.awt.event.ActionEvent evt) {
+        //area null
+        area.setText(null);
+        BatchNoField.setText(null);
+        RollNoField.setText(null);
+        StudentNaameField.setText(null);
+        DepartmentField.setText(null);        
+        RegNoField.setText(null);        
+        
+        FineLateField.setText("0");
+
+        ExaminationField.setText("0");
+        
+        LibraryFeeFeild.setText("0");
+        ReAdmissionField.setText("0");
+        
+        ImprovementFeild.setText("0");
+        MarksSheetField.setText("0");
+        
+        AdmissionField.setText("0");
+        
+        SemesterField.setText("0");
+        
+        LabFeeFeild.setText("0");
+        
+        TotalCost.setText(null);
+
+        //checkbox null
+
+        AdmissionFeeCheck.setSelected(false);
+        ReAdmissionCheck.setSelected(false);
+        SemesterCheck.setSelected(false);
+       
+        LabCheck.setSelected(false);
+        LibraryCheck.setSelected(false);
+        ExaminationCheck.setSelected(false);
+        ImprovementFee.setSelected(false);
+        MArksSheetCheck.setSelected(false);
+        FineLateCheck.setSelected(false);
+    }
 }
