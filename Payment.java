@@ -144,5 +144,16 @@ public class Payment extends javax.swing.JFrame {
         });
         taskbar.add(minimize);
         minimize.setBounds(962, 0, 30, 60);
+
+        // customize exit button 
+        Exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/exit.jpg"))); 
+        Exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Exit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ExitMouseClicked(evt);
+            }
+        });
+        taskbar.add(Exit);
+        Exit.setBounds(1010, 0, 30, 60);
     }
 }
