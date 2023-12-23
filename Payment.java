@@ -792,5 +792,16 @@ public class Payment extends javax.swing.JFrame {
         area.setText(area.getText() + "---------------------------------\n\n");
     }
 
-    // 
+    // add fine late action listener
+    private void FineLateCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (FineLateCheck.isSelected()) {
+            FineLateField.setEditable(true);
+            FineLateField.setText("100");
+            FineLateField.requestFocus();
+        } else {
+            FineLateField.setEditable(false);
+            FineLateField.setText("0");
+        }
+    }
+
 }
