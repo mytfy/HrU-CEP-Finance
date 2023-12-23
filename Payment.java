@@ -851,4 +851,16 @@ public class Payment extends javax.swing.JFrame {
             LibraryFeeFeild.setText("0");
         }
     }
+
+    // add lab action listener 
+    private void LabCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (LabCheck.isSelected()) {
+            LabFeeFeild.setEditable(true);
+            LabFeeFeild.setText("500");
+            LabFeeFeild.requestFocus();
+        } else {
+            LabFeeFeild.setEditable(false);
+            LabFeeFeild.setText("0");
+        }
+    }
 }
