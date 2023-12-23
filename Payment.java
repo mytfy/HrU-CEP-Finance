@@ -155,5 +155,11 @@ public class Payment extends javax.swing.JFrame {
         });
         taskbar.add(Exit);
         Exit.setBounds(1010, 0, 30, 60);
+
+        // customize header text
+        text.setFont(new java.awt.Font("Domino Jack", 0, 24)); 
+        text.setText("Student Payment System");
+        taskbar.add(text);
+        text.setBounds(31, 0, 468, 60);
     }
 }
