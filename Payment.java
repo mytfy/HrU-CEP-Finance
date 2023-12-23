@@ -919,4 +919,11 @@ public class Payment extends javax.swing.JFrame {
         int y = evt.getXOnScreen();
         this.setLocation(x /*- Xmouse*/, y /*-Ymouse*/);
     }
+
+    // add jlabel click listener
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {
+       DashBoard db = new DashBoard();
+       this.dispose();
+       db.setVisible(true);
+    }
 }
