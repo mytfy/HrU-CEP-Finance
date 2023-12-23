@@ -804,4 +804,16 @@ public class Payment extends javax.swing.JFrame {
         }
     }
 
+    // add marks sheet listener
+    private void MArksSheetCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (MArksSheetCheck.isSelected()) {
+            MarksSheetField.setEditable(true);
+            MarksSheetField.setText("500");
+            MarksSheetField.requestFocus();
+        } else {
+            MarksSheetField.setEditable(false);
+            MarksSheetField.setText("0");
+        }
+    }
+
 }
