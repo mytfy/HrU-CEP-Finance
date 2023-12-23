@@ -680,4 +680,35 @@ public class Payment extends javax.swing.JFrame {
         MArksSheetCheck.setSelected(false);
         FineLateCheck.setSelected(false);
     }
+
+    // add total button listener
+        private void totalActionPerformed(java.awt.event.ActionEvent evt) {
+
+        double EFR = Double.parseDouble(AdmissionField.getText());
+        
+        double BM = Double.parseDouble(FineLateField.getText());
+        
+        double CC = Double.parseDouble(ExaminationField.getText());
+       
+        double CF = Double.parseDouble(LibraryFeeFeild.getText());
+        double CFR = Double.parseDouble(ReAdmissionField.getText());
+        
+        double CS = Double.parseDouble(ImprovementFeild.getText());
+        double CSK = Double.parseDouble(MarksSheetField.getText());
+      
+        double PFR = Double.parseDouble(SemesterField.getText());
+        
+        double SFR = Double.parseDouble(LabFeeFeild.getText());
+        
+
+        //.................calculation.................................
+
+        double total =BM +CC+CF+CFR+CS+CSK+EFR+PFR+SFR ;
+        
+
+        //.................show values in text fild...................
+
+        String item_total = String.format("%3f", total);
+        TotalCost.setText((String) item_total);
+    }
 }
