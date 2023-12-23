@@ -161,5 +161,18 @@ public class Payment extends javax.swing.JFrame {
         text.setText("Student Payment System");
         taskbar.add(text);
         text.setBounds(31, 0, 468, 60);
+
+        // customize jlabel1 and add it to taskbar and add taskbar to jpanel1
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        taskbar.add(jLabel1);
+        jLabel1.setBounds(910, 0, 30, 60);
+
+        jPanel1.add(taskbar);
+        taskbar.setBounds(0, 0, 1100, 60);
     }
 }
