@@ -507,5 +507,11 @@ public class Payment extends javax.swing.JFrame {
                 printreciptActionPerformed(evt);
             }
         });
+
+        // customize print area text
+        area.setColumns(20);
+        area.setFont(new java.awt.Font("Monospaced", 0, 18)); 
+        area.setRows(5);
+        print_area.setViewportView(area);
     }
 }
