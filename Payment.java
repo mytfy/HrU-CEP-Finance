@@ -179,5 +179,16 @@ public class Payment extends javax.swing.JFrame {
         body.setBackground(new java.awt.Color(8, 100, 0));
 
         items.setBackground(new java.awt.Color(255, 255, 255));
+
+        // customize admission Fee checbox
+        AdmissionFeeCheck.setBackground(new java.awt.Color(255, 255, 255));
+        AdmissionFeeCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        AdmissionFeeCheck.setForeground(new java.awt.Color(51, 51, 51));
+        AdmissionFeeCheck.setText("Admission Fee");
+        AdmissionFeeCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AdmissionFeeCheckActionPerformed(evt);
+            }
+        });
     }
 }
