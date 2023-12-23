@@ -721,4 +721,12 @@ public class Payment extends javax.swing.JFrame {
             log.setVisible(true);;
         }
     }
+
+    // add print reciept button listener
+    private void printreciptActionPerformed(java.awt.event.ActionEvent evt) {
+        try {
+            area.print();
+        } catch (Exception e) {
+        }
+    }
 }
