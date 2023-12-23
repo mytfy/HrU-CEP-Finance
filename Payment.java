@@ -190,5 +190,16 @@ public class Payment extends javax.swing.JFrame {
                 AdmissionFeeCheckActionPerformed(evt);
             }
         });
+
+        // customize readmission checkbox
+        ReAdmissionCheck.setBackground(new java.awt.Color(255, 255, 255));
+        ReAdmissionCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        ReAdmissionCheck.setForeground(new java.awt.Color(51, 51, 51));
+        ReAdmissionCheck.setText("Re-Admission Fee");
+        ReAdmissionCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReAdmissionCheckActionPerformed(evt);
+            }
+        });
     }
 }
