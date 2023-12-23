@@ -462,5 +462,15 @@ public class Payment extends javax.swing.JFrame {
         RollNoField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         RollNoField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        // customize total cost text and field
+        totalcost.setEditable(false);
+        totalcost.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        totalcost.setText(" Total Cost");
+        totalcost.setBorder(null);
+
+        TotalCost.setEditable(false);
+        TotalCost.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        TotalCost.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
     }
 }
