@@ -268,5 +268,17 @@ public class Payment extends javax.swing.JFrame {
                 MArksSheetCheckActionPerformed(evt);
             }
         });
+
+        // customize fine / late fee checbox
+                FineLateCheck.setBackground(new java.awt.Color(255, 255, 255));
+        FineLateCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        FineLateCheck.setForeground(new java.awt.Color(51, 51, 51));
+        FineLateCheck.setText("Fine/ Late Fee");
+        FineLateCheck.setActionCommand("");
+        FineLateCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FineLateCheckActionPerformed(evt);
+            }
+        });
     }
 }
