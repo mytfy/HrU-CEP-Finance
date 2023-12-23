@@ -616,6 +616,7 @@ public class Payment extends javax.swing.JFrame {
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
-        // 
+        // add body to scroll pane
+        scrollPane1.add(body);
     }
 }
