@@ -445,5 +445,22 @@ public class Payment extends javax.swing.JFrame {
         Department.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
         Department.setForeground(new java.awt.Color(255, 255, 255));
         Department.setText("Department:");
+
+        // customize student name, reg no, batch no, roll no fields
+        StudentNaameField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        StudentNaameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        RegNoField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        RegNoField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        BatchNoField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        BatchNoField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        DepartmentField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        DepartmentField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        RollNoField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        RollNoField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
     }
 }
