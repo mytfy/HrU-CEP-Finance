@@ -328,5 +328,11 @@ public class Payment extends javax.swing.JFrame {
         FineLateField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         FineLateField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         FineLateField.setText("0");
+
+        // customize admission fee field
+        AdmissionField.setEditable(false);
+        AdmissionField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        AdmissionField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        AdmissionField.setText("0");
     }
 }
