@@ -472,5 +472,14 @@ public class Payment extends javax.swing.JFrame {
         TotalCost.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         TotalCost.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        // customize reset button text
+        Reset.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        Reset.setText("Reset");
+        Reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ResetActionPerformed(evt);
+            }
+        });
+
     }
 }
