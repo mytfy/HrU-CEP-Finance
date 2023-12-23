@@ -18,4 +18,14 @@ public class DashBoard extends javax.swing.JFrame {
     /**
      * Creates new form DashBoard
      */
+          public DashBoard() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+    }
+
+
+
+
+
+      
 }
