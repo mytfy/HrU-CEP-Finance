@@ -420,5 +420,10 @@ public class Payment extends javax.swing.JFrame {
 
         // add background scroll pane
         Bg_ScrollPane2.setViewportView(items);
+
+        // customize student name text
+        Student_Name.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
+        Student_Name.setForeground(new java.awt.Color(255, 255, 255));
+        Student_Name.setText("Student Name :");
     }
 }
