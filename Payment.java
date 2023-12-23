@@ -280,5 +280,11 @@ public class Payment extends javax.swing.JFrame {
                 FineLateCheckActionPerformed(evt);
             }
         });
+
+        // customzie readmission fee field 
+        ReAdmissionField.setEditable(false);
+        ReAdmissionField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        ReAdmissionField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ReAdmissionField.setText("0");
     }
 }
