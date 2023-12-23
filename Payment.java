@@ -899,4 +899,12 @@ public class Payment extends javax.swing.JFrame {
             AdmissionField.setText("0");
         }
     }
+
+    // add exit button listener
+        private void ExitMouseClicked(java.awt.event.MouseEvent evt) {
+        if (JOptionPane.showConfirmDialog(frame, "Do you want to exit?", "Exit", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION)
+        {    
+        System.exit(0);
+        }
+    }
 }
