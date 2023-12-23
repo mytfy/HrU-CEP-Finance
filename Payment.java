@@ -828,4 +828,15 @@ public class Payment extends javax.swing.JFrame {
         }
     }
 
+    // add examination action listener
+    private void ExaminationCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (ExaminationCheck.isSelected()) {
+            ExaminationField.setEditable(true);
+            ExaminationField.setText("500");
+            ExaminationField.requestFocus();
+        } else {
+            ExaminationField.setEditable(false);
+            ExaminationField.setText("0");
+        }
+    }
 }
