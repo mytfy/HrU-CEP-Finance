@@ -246,5 +246,15 @@ public class Payment extends javax.swing.JFrame {
             }
         });
 
+        // customize improvement fee checkbox
+        ImprovementFee.setBackground(new java.awt.Color(255, 255, 255));
+        ImprovementFee.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        ImprovementFee.setForeground(new java.awt.Color(51, 51, 51));
+        ImprovementFee.setText("Improvement Fee");
+        ImprovementFee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImprovementFeeActionPerformed(evt);
+            }
+        });
     }
 }
