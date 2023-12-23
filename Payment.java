@@ -875,4 +875,16 @@ public class Payment extends javax.swing.JFrame {
             SemesterField.setText("0");
         }
     }
+
+    // add readmission action listener
+     private void ReAdmissionCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (ReAdmissionCheck.isSelected()) {
+            ReAdmissionField.setEditable(true);
+            ReAdmissionField.setText("20000");
+            ReAdmissionField.requestFocus();
+        } else {
+            ReAdmissionField.setEditable(false);
+            ReAdmissionField.setText("0");
+        }
+    }
 }
