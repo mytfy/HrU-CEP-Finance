@@ -907,4 +907,9 @@ public class Payment extends javax.swing.JFrame {
         System.exit(0);
         }
     }
+
+    // add minimize button listener
+        private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
+        this.setState(JFrame.ICONIFIED);
+    }
 }
