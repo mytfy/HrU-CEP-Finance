@@ -117,5 +117,21 @@ public class Payment extends javax.swing.JFrame {
         printrecipt = new javax.swing.JButton();
         print_area = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
+
+        jPanel1.setBackground(new java.awt.Color(8, 100, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204), 5));
+        jPanel1.setLayout(null);
+
+        taskbar.setBackground(new java.awt.Color(255, 255, 255));
+        taskbar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                taskbarMouseDragged(evt);
+            }
+        });
+        taskbar.setLayout(null);
     }
 }
