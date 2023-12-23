@@ -481,5 +481,13 @@ public class Payment extends javax.swing.JFrame {
             }
         });
 
+        // customize total button text
+        total.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        total.setText("Total");
+        total.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalActionPerformed(evt);
+            }
+        });
     }
 }
