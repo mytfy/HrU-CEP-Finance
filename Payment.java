@@ -618,5 +618,9 @@ public class Payment extends javax.swing.JFrame {
 
         // add body to scroll pane
         scrollPane1.add(body);
+
+        // add scroll pane to jpanel
+        jPanel1.add(scrollPane1);
+        scrollPane1.setBounds(0, 60, 1100, 800);
     }
 }
