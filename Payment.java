@@ -863,4 +863,16 @@ public class Payment extends javax.swing.JFrame {
             LabFeeFeild.setText("0");
         }
     }
+
+    // add semester action listener
+    private void SemesterCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (SemesterCheck.isSelected()) {
+            SemesterField.setEditable(true);
+            SemesterField.setText("24500");
+            SemesterField.requestFocus();
+        } else {
+            SemesterField.setEditable(false);
+            SemesterField.setText("0");
+        }
+    }
 }
