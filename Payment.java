@@ -498,5 +498,14 @@ public class Payment extends javax.swing.JFrame {
                 getreciptActionPerformed(evt);
             }
         });
+
+        // customize print reciept button text
+        printrecipt.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        printrecipt.setText("Print Receipt");
+        printrecipt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                printreciptActionPerformed(evt);
+            }
+        });
     }
 }
