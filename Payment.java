@@ -256,5 +256,17 @@ public class Payment extends javax.swing.JFrame {
                 ImprovementFeeActionPerformed(evt);
             }
         });
+
+        // customize marksheet checkbox
+        MArksSheetCheck.setBackground(new java.awt.Color(255, 255, 255));
+        MArksSheetCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        MArksSheetCheck.setForeground(new java.awt.Color(51, 51, 51));
+        MArksSheetCheck.setText("Marks Sheet Fee ");
+        MArksSheetCheck.setActionCommand(" Chicken BBQ");
+        MArksSheetCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MArksSheetCheckActionPerformed(evt);
+            }
+        });
     }
 }
