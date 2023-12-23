@@ -104,6 +104,31 @@ public class DashBoard extends javax.swing.JFrame {
         pack();
     }
 
+      private void logoutMouseClicked(java.awt.event.MouseEvent evt) {
+        frame = new JFrame("Exit");
+        if (JOptionPane.showConfirmDialog(frame, "Are you sure you want to Logout !", "Logout",
+                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+            Login log = new Login();
+            this.dispose();
+            log.setVisible(true);
+        }
+    }
+
+    private void registerMouseClicked(java.awt.event.MouseEvent evt) {
+        Register reg = new Register();
+        reg.setVisible(true);
+    }
+
+    private void paymentMouseClicked(java.awt.event.MouseEvent evt) {
+        Payment hm = new Payment();
+        this.dispose();
+        hm.setVisible(true);
+    }
+
+    private void DataMouseClicked(java.awt.event.MouseEvent evt) {
+        JOptionPane.showMessageDialog(null, "This option is underdevelopment");
+    }
+
 
 
 
