@@ -201,5 +201,16 @@ public class Payment extends javax.swing.JFrame {
                 ReAdmissionCheckActionPerformed(evt);
             }
         });
+
+        // customize semester fee checkbox
+        SemesterCheck.setBackground(new java.awt.Color(255, 255, 255));
+        SemesterCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        SemesterCheck.setForeground(new java.awt.Color(51, 51, 51));
+        SemesterCheck.setText("Semester Fee");
+        SemesterCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SemesterCheckActionPerformed(evt);
+            }
+        });
     }
 }
