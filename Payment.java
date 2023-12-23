@@ -234,5 +234,17 @@ public class Payment extends javax.swing.JFrame {
                 LibraryCheckActionPerformed(evt);
             }
         });
+
+        // customzie examination fee checkbox
+        ExaminationCheck.setBackground(new java.awt.Color(255, 255, 255));
+        ExaminationCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        ExaminationCheck.setForeground(new java.awt.Color(51, 51, 51));
+        ExaminationCheck.setText("Examinatiom Fee");
+        ExaminationCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExaminationCheckActionPerformed(evt);
+            }
+        });
+
     }
 }
