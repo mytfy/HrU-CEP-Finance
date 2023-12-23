@@ -887,4 +887,16 @@ public class Payment extends javax.swing.JFrame {
             ReAdmissionField.setText("0");
         }
     }
+
+    // add admission acion listener
+    private void AdmissionFeeCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        if (AdmissionFeeCheck.isSelected()) {
+            AdmissionField.setEditable(true);
+            AdmissionField.setText("20000");
+            AdmissionField.requestFocus();
+        } else {
+            AdmissionField.setEditable(false);
+            AdmissionField.setText("0");
+        }
+    }
 }
