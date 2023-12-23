@@ -729,4 +729,68 @@ public class Payment extends javax.swing.JFrame {
         } catch (Exception e) {
         }
     }
+
+    // add get recipet listener
+        private void getreciptActionPerformed(java.awt.event.ActionEvent evt) {
+
+        // decoration
+        area.setText("*********************************\n");
+        area.setText(area.getText() + "******   Payment Recipt   *******\n");
+        area.setText(area.getText() + "*********************************\n");
+
+        //Date
+        Date obj = new Date();
+        String date = obj.toString();
+        area.setText(area.getText() + "" + date + "\n");
+        
+        area.setText(area.getText() + "---------------------------------\n");
+
+        area.setText(area.getText() + "---------------------------------\n");
+        
+        // items
+        area.setText(area.getText() + " Name: " + StudentNaameField.getText() + "\n");
+        area.setText(area.getText() + " Department: " + DepartmentField.getText() + "\n");
+        area.setText(area.getText() + " Batch No: " + BatchNoField.getText() + "\n");
+        area.setText(area.getText() + " Registation No: " + RegNoField.getText() + "\n");
+        area.setText(area.getText() + " Roll no: " + RollNoField.getText() + "\n\n");
+        area.setText(area.getText() + " Discriptation         Amounts\n");
+        area.setText(area.getText() + "---------------------------------\n");        
+        if (AdmissionFeeCheck.isSelected()) {
+            area.setText(area.getText() + " Admission Fee............" + AdmissionField.getText() + "\n");
+        }
+        
+        if (ReAdmissionCheck.isSelected()) {
+            area.setText(area.getText() + " Re-Admission Fee........." + ReAdmissionField.getText() + "\n");
+        }
+        if (SemesterCheck.isSelected()) {
+            area.setText(area.getText() + " Semester Fee............." + SemesterField.getText() + "\n");
+        }
+        if (LabCheck.isSelected()) {
+            area.setText(area.getText() + " Lab Fee.................." + LabFeeFeild.getText() + "\n");
+        }
+        if (LibraryCheck.isSelected()) {
+            area.setText(area.getText() + " Library Fee.............." + LibraryFeeFeild.getText() + "\n");
+        }
+        if (ExaminationCheck.isSelected()) {
+            area.setText(area.getText() + " Examination Fee.........." + ExaminationField.getText() + "\n");
+        }
+        if (ImprovementFee.isSelected()) {
+            area.setText(area.getText() + " Improvement Fee.........." + ImprovementFeild.getText() + "\n");
+        }
+        if (MArksSheetCheck.isSelected()) {
+            area.setText(area.getText() + " Marks Sheet Fee.........." + MarksSheetField.getText() + "\n");
+        }
+        if (FineLateCheck.isSelected()) {
+            area.setText(area.getText() + " Fine/Late fee............" + FineLateField.getText() + "\n");
+        }
+  
+        area.setText(area.getText() + "---------------------------------\n");
+
+        //bill
+     
+        area.setText(area.getText() + " Total Cost       " + TotalCost.getText()+"ETB" + "\n");
+        area.setText(area.getText() + "---------------------------------\n\n");
+    }
+
+    // 
 }
