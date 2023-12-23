@@ -912,4 +912,11 @@ public class Payment extends javax.swing.JFrame {
         private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
+
+    // add taskbar drag listener
+        private void taskbarMouseDragged(java.awt.event.MouseEvent evt) {
+        int x = evt.getXOnScreen();
+        int y = evt.getXOnScreen();
+        this.setLocation(x /*- Xmouse*/, y /*-Ymouse*/);
+    }
 }
