@@ -316,5 +316,11 @@ public class Payment extends javax.swing.JFrame {
         ImprovementFeild.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         ImprovementFeild.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ImprovementFeild.setText("0");
+
+        // customize marks sheet fee field
+        MarksSheetField.setEditable(false);
+        MarksSheetField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        MarksSheetField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        MarksSheetField.setText("0");
     }
 }
