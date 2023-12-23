@@ -133,5 +133,16 @@ public class Payment extends javax.swing.JFrame {
             }
         });
         taskbar.setLayout(null);
+
+        // customize minimize button
+        minimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/minimize.jpg"))); 
+        minimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        minimize.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                minimizeMouseClicked(evt);
+            }
+        });
+        taskbar.add(minimize);
+        minimize.setBounds(962, 0, 30, 60);
     }
 }
