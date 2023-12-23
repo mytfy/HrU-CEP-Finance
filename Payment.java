@@ -711,4 +711,14 @@ public class Payment extends javax.swing.JFrame {
         String item_total = String.format("%3f", total);
         TotalCost.setText((String) item_total);
     }
+
+    // add logout button listener
+    private void logoutMouseClicked(java.awt.event.MouseEvent evt) {
+        frame = new JFrame("Exit");
+        if (JOptionPane.showConfirmDialog(frame, "Are you sure you want to Logout !", "Logout", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+            Login log = new Login();
+            this.dispose();
+            log.setVisible(true);;
+        }
+    }
 }
