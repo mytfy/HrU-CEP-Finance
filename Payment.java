@@ -135,7 +135,7 @@ public class Payment extends javax.swing.JFrame {
         taskbar.setLayout(null);
 
         // customize minimize button
-        minimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/minimize.jpg"))); 
+        minimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("minimize.jpg"))); 
         minimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         minimize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -146,7 +146,7 @@ public class Payment extends javax.swing.JFrame {
         minimize.setBounds(962, 0, 30, 60);
 
         // customize exit button 
-        Exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/exit.jpg"))); 
+        Exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("exit.jpg"))); 
         Exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
