@@ -223,5 +223,16 @@ public class Payment extends javax.swing.JFrame {
                 LabCheckActionPerformed(evt);
             }
         });
+
+        // customize library fee checkbox
+        LibraryCheck.setBackground(new java.awt.Color(255, 255, 255));
+        LibraryCheck.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); 
+        LibraryCheck.setForeground(new java.awt.Color(51, 51, 51));
+        LibraryCheck.setText("Library Fee");
+        LibraryCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LibraryCheckActionPerformed(evt);
+            }
+        });
     }
 }
