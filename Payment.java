@@ -440,5 +440,10 @@ public class Payment extends javax.swing.JFrame {
         Roll.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
         Roll.setForeground(new java.awt.Color(255, 255, 255));
         Roll.setText("Roll No:");
+
+        // customize department text
+        Department.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
+        Department.setForeground(new java.awt.Color(255, 255, 255));
+        Department.setText("Department:");
     }
 }
