@@ -816,4 +816,16 @@ public class Payment extends javax.swing.JFrame {
         }
     }
 
+    // add improvement action litener
+    private void ImprovementFeeActionPerformed(java.awt.event.ActionEvent evt) {
+        if (ImprovementFee.isSelected()) {
+            ImprovementFeild.setEditable(true);
+            ImprovementFeild.setText("2500");
+            ImprovementFeild.requestFocus();
+        } else {
+            ImprovementFeild.setEditable(false);
+            ImprovementFeild.setText("0");
+        }
+    }
+
 }
