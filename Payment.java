@@ -322,5 +322,11 @@ public class Payment extends javax.swing.JFrame {
         MarksSheetField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         MarksSheetField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         MarksSheetField.setText("0");
+
+        // customize fine/late fee field
+        FineLateField.setEditable(false);
+        FineLateField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        FineLateField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        FineLateField.setText("0");
     }
 }
