@@ -292,5 +292,11 @@ public class Payment extends javax.swing.JFrame {
         SemesterField.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
         SemesterField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         SemesterField.setText("0");
+
+        // customize lab fee field
+        LabFeeFeild.setEditable(false);
+        LabFeeFeild.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); 
+        LabFeeFeild.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        LabFeeFeild.setText("0");
     }
 }
