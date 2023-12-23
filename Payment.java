@@ -59,6 +59,14 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JLabel Exit;
     // End of variables declaration
 
+        /**
+     * Creates new form Payment
+     */
+    public Payment() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+    }
+
         private void initComponents() {
 
         // initialize the variables
