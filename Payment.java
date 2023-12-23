@@ -418,6 +418,7 @@ public class Payment extends javax.swing.JFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        // 
+        // add background scroll pane
+        Bg_ScrollPane2.setViewportView(items);
     }
 }
