@@ -430,5 +430,10 @@ public class Payment extends javax.swing.JFrame {
         Batch.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
         Batch.setForeground(new java.awt.Color(255, 255, 255));
         Batch.setText("Batch No:");
+
+        // customize reg number text
+        RegNo.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 20)); 
+        RegNo.setForeground(new java.awt.Color(255, 255, 255));
+        RegNo.setText("Registation No:");
     }
 }
