@@ -149,6 +149,15 @@ public class DashBoard extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(DashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+
+            
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new DashBoard().setVisible(true);
+            }
+        });
+    }
             
 
 
