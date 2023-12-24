@@ -98,6 +98,7 @@ public class Login extends javax.swing.JFrame {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 499,
                                 javax.swing.GroupLayout.PREFERRED_SIZE));
-
+// pack every components inside the window
+        pack();
     }
 }
