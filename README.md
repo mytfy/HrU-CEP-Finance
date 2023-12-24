@@ -11,10 +11,20 @@ the easy way to use those data for taking any actions.
 The objective of “Student Payment System” is to making easy to work of 
 the management of a Educational institute.
 The facilities are :
-- Contain Student Data.
 - Can Add Students Information
 - Store Students Details.
 - Making Students Payment Slip.
 - Print Payment Receipts For Necessary Transaction
 - Make payment system more easier
 - Help to maintain accounts in a easy and digital way
+
+## How to run the app
+Run the main function of the log in file
+or 
+command line: 
+1. javac Login.java
+2. java Login
+
+## The credentials of the admin are:
+1. username = "admin"
+2. password = "1234"
