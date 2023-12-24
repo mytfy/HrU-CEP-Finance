@@ -101,4 +101,9 @@ public class Login extends javax.swing.JFrame {
 // pack every components inside the window
         pack();
     }
+    // add exit button listener
+     private void exitMouseClicked(java.awt.event.MouseEvent evt) {
+        System.exit(0);
+    }
+
 }
