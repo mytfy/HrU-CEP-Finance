@@ -271,6 +271,25 @@ public class Register extends javax.swing.JFrame {
     private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
+
+/**
+ * Event handler for the register label's mouse click.
+ * Displays a congratulatory message for completed registration and resets the input fields.
+ *
+ */
+
+    private void resgisterMouseClicked(java.awt.event.MouseEvent evt) {
+
+        JOptionPane.showMessageDialog(null, "Congratulation! Registation Completed");
+        IDNumText.setText(null);
+        NameText.setText(null);
+        EmailText.setText(null);
+        LocationText.setText(null);
+        DepartmentText.setText(null);
+        PhoneNumberText.setText(null);
+        BatchNumText.setText(null);
+        RollNumText.setText(null);
+    }
       
   // **********
 }
