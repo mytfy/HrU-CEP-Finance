@@ -7,6 +7,9 @@ It will help to doing work of a institute easy and secured.
 This software will help to store students data and give
 the easy way to use those data for taking any actions.
 
+## working demo:
+<img src="Login.jpg" >
+
 ## Objective
 The objective of “Student Payment System” is to making easy to work of 
 the management of a Educational institute.
