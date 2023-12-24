@@ -381,5 +381,35 @@ private void LocationTextFocusLost(java.awt.event.FocusEvent evt) {
     }
 }
 
+      /**
+ * Event handler for the focus gained event on the PhoneNumberText field.
+ * If the current text in the PhoneNumberText field is "Phone," it clears the text,
+ * setting it to an empty string, and changes the text color to black. This behavior
+ * provides a cleaner user experience by removing the default placeholder text
+ * when users begin typing their phone number.
+ *
+ */
+private void PhoneNumberTextFocusGained(java.awt.event.FocusEvent evt) {
+    if (PhoneNumberText.getText().equals("Phone")) {
+        PhoneNumberText.setText("");
+        PhoneNumberText.setForeground(Color.BLACK);
+    }
+}
+
+/**
+ * Event handler for the focus lost event on the PhoneNumberText field.
+ * If the PhoneNumberText field is left empty, it sets the text to the default
+ * placeholder "Phone" and changes the text color to a subdued shade (100, 100, 100).
+ * This ensures a visual cue for users to recognize the phone number input field,
+ * especially if they didn't enter any text.
+ *
+ */
+private void PhoneNumberTextFocusLost(java.awt.event.FocusEvent evt) {
+    if (PhoneNumberText.getText().equals("")) {
+        PhoneNumberText.setText("Phone");
+        PhoneNumberText.setForeground(new Color(100, 100, 100));
+    }
+}
+
   // **********
 }
