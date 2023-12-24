@@ -19,8 +19,8 @@ The facilities are :
 - Help to maintain accounts in a easy and digital way
 
 ## How to run the app
-Run the main function of the log in file
-or 
+Run the main function of the Login.java file
+#
 command line: 
 1. javac Login.java
 2. java Login
