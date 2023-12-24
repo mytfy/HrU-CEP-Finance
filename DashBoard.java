@@ -95,7 +95,7 @@ public class DashBoard extends javax.swing.JFrame {
         options.setBounds(90, 70, 600, 380);
 
       // customize the dashboard with background image
-        dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/Dashboard.jpg")));
+        dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("Dashboard.jpg")));
         jPanel1.add(dashboard);
         dashboard.setBounds(0, 0, 811, 499);
 
