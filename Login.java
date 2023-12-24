@@ -33,5 +33,10 @@ public class Login extends javax.swing.JFrame {
         loinbuttton = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
+        // customize the window
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+
+        jPanel1.setLayout(null);
     }
 }
