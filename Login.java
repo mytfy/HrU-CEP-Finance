@@ -109,4 +109,23 @@ public class Login extends javax.swing.JFrame {
     private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
+  // add login button listener
+    private void loinbutttonMouseClicked(java.awt.event.MouseEvent evt) {
+        // set default password
+
+        String usi = userid.getText();
+        String pas = new String(password.getPassword());
+        if (usi.equals("admin") && pas.equals("1234")) {
+
+            new DashBoard().setVisible(true);
+            this.dispose();
+            userid.setText(null);
+            password.setText(null);
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Login ID or Password incorret");
+            userid.setText(null);
+            password.setText(null);
+        }
+    }
 }
