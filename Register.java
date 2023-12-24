@@ -350,5 +350,36 @@ public class Register extends javax.swing.JFrame {
         }
 
     }
+
+      /**
+ * Event handler for the focus gained event on the LocationText field.
+ * If the current text in the LocationText field is "Location," it clears the text,
+ * setting it to an empty string, and changes the text color to black. This behavior
+ * provides a cleaner user experience by removing the default placeholder text
+ * when users begin typing their location.
+ *
+ */
+private void LocationTextFocusGained(java.awt.event.FocusEvent evt) {
+    if (LocationText.getText().equals("Location")) {
+        LocationText.setText("");
+        LocationText.setForeground(Color.BLACK);
+    }
+}
+
+/**
+ * Event handler for the focus lost event on the LocationText field.
+ * If the LocationText field is left empty, it sets the text to the default
+ * placeholder "Location" and changes the text color to a subdued shade (100, 100, 100).
+ * This ensures a visual cue for users to recognize the location input field,
+ * especially if they didn't enter any text.
+ *
+ */
+private void LocationTextFocusLost(java.awt.event.FocusEvent evt) {
+    if (LocationText.getText().equals("")) {
+        LocationText.setText("Location");
+        LocationText.setForeground(new Color(100, 100, 100));
+    }
+}
+
   // **********
 }
