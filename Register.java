@@ -501,5 +501,35 @@ private void IDNumTextFocusLost(java.awt.event.FocusEvent evt) {
     }
 }
 
+      /**
+ * Event handler for the focus gained event on the DepartmentText field.
+ * If the current text in the DepartmentText field is "Department," it clears the text,
+ * setting it to an empty string, and changes the text color to black. This behavior
+ * provides a cleaner user experience by removing the default placeholder text
+ * when users begin typing the department name.
+ *
+ */
+private void DepartmentTextFocusGained(java.awt.event.FocusEvent evt) {
+    if (DepartmentText.getText().equals("Department")) {
+        DepartmentText.setText("");
+        DepartmentText.setForeground(Color.BLACK);
+    }
+}
+
+/**
+ * Event handler for the focus lost event on the DepartmentText field.
+ * If the DepartmentText field is left empty, it sets the text to the default
+ * placeholder "Department" and changes the text color to a subdued shade (100, 100, 100).
+ * This ensures a visual cue for users to recognize the department input field,
+ * especially if they didn't enter any text.
+ *
+ */
+private void DepartmentTextFocusLost(java.awt.event.FocusEvent evt) {
+    if (DepartmentText.getText().equals("")) {
+        DepartmentText.setText("Department");
+        DepartmentText.setForeground(new Color(100, 100, 100));
+    }
+}
+
   // **********
 }
