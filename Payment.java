@@ -185,7 +185,7 @@ public class Payment extends javax.swing.JFrame {
         taskbar.setBounds(0, 0, 1100, 60);
 
         // add body background and items background
-        body.setBackground(new java.awt.Color(8, 100, 0));
+        body.setBackground(new java.awt.Color(100, 100, 100));
 
         items.setBackground(new java.awt.Color(255, 255, 255));
 
