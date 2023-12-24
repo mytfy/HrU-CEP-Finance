@@ -318,5 +318,20 @@ public class Register extends javax.swing.JFrame {
         }
     }
 
+          /**
+ * Event handler for the focus gained event on the EmailText field.
+ * If the current text in the EmailText field is "Email," it clears the text,
+ * setting it to an empty string, and changes the text color to black.
+ * This provides a user-friendly behavior by removing the default placeholder
+ * text when the user starts typing their email address.
+ *
+ */
+
+    private void EmailTextFocusGained(java.awt.event.FocusEvent evt) {
+        if (EmailText.getText().equals("Email")) {
+            EmailText.setText("");
+            EmailText.setForeground(Color.BLACK);
+        }
+    }
   // **********
 }
