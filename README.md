@@ -20,7 +20,7 @@ The facilities are :
 
 ## How to run the app
 Run the main function of the Login.java file
-#
+# Or
 command line: 
 1. javac Login.java
 2. java Login
