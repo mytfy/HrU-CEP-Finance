@@ -304,5 +304,19 @@ public class Register extends javax.swing.JFrame {
             NameText.setForeground(Color.BLACK);
         }
     }
+
+      /**
+ * Event handler for the focus lost event on the NameText field.
+ * Restores the default "Name" text and sets the text color to a lighter shade.
+ *
+ */
+
+    private void NameTextFocusLost(java.awt.event.FocusEvent evt) {
+        if (NameText.getText().equals("")) {
+            NameText.setText("Name");
+            NameText.setForeground(new Color(100, 100, 100));
+        }
+    }
+
   // **********
 }
