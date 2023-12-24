@@ -411,5 +411,35 @@ private void PhoneNumberTextFocusLost(java.awt.event.FocusEvent evt) {
     }
 }
 
+      /**
+ * Event handler for the focus gained event on the BatchNumText field.
+ * If the current text in the BatchNumText field is "Batch No," it clears the text,
+ * setting it to an empty string, and changes the text color to black. This behavior
+ * provides a cleaner user experience by removing the default placeholder text
+ * when users begin typing the batch number.
+ *
+ */
+private void BatchNumTextFocusGained(java.awt.event.FocusEvent evt) {
+    if (BatchNumText.getText().equals("Batch No")) {
+        BatchNumText.setText("");
+        BatchNumText.setForeground(Color.BLACK);
+    }
+}
+
+/**
+ * Event handler for the focus lost event on the BatchNumText field.
+ * If the BatchNumText field is left empty, it sets the text to the default
+ * placeholder "Batch No" and changes the text color to a subdued shade (100, 100, 100).
+ * This ensures a visual cue for users to recognize the batch number input field,
+ * especially if they didn't enter any text.
+ *
+ */
+private void BatchNumTextFocusLost(java.awt.event.FocusEvent evt) {
+    if (BatchNumText.getText().equals("")) {
+        BatchNumText.setText("Batch No");
+        BatchNumText.setForeground(new Color(100, 100, 100));
+    }
+}
+
   // **********
 }
