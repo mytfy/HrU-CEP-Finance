@@ -81,5 +81,10 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(loinbuttton);
         loinbuttton.setBounds(620, 370, 160, 40);
+        
+         // customize window background
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/Login.jpg")));
+        jPanel1.add(background);
+        background.setBounds(0, 0, 880, 500);
     }
 }
