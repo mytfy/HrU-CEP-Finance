@@ -114,6 +114,14 @@ public class DashBoard extends javax.swing.JFrame {
         pack();
     }
 
+      // add exit button listener 
+    private void exitMouseClicked(java.awt.event.MouseEvent evt) {
+        if (JOptionPane.showConfirmDialog(frame, "Do you want to Close?", "Close Registation Form",
+                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+            System.exit(0);
+        }
+    }
+
       private void logoutMouseClicked(java.awt.event.MouseEvent evt) {
         frame = new JFrame("Exit");
         if (JOptionPane.showConfirmDialog(frame, "Are you sure you want to Logout !", "Logout",
