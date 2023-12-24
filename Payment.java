@@ -570,7 +570,7 @@ public class Payment extends javax.swing.JFrame {
                                     .addComponent(printrecipt, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bodyLayout.createSequentialGroup()
                         .addGap(21, 21, 21)))
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(0, Short.MAX_VALUE))
         );
 
         // customize body vertical groups
@@ -622,7 +622,7 @@ public class Payment extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(0, Short.MAX_VALUE))
         );
 
         // add body to scroll pane
@@ -641,7 +641,7 @@ public class Payment extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 862, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         // pack all components
