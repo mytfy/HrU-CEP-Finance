@@ -290,6 +290,19 @@ public class Register extends javax.swing.JFrame {
         BatchNumText.setText(null);
         RollNumText.setText(null);
     }
-      
+
+      /**
+ * Event handler for the focus gained event on the NameText field.
+ * Clears the default "Name" text and changes the text color to black.
+ *
+ */
+
+
+    private void NameTextFocusGained(java.awt.event.FocusEvent evt) {
+        if (NameText.getText().equals("Name")) {
+            NameText.setText(null);
+            NameText.setForeground(Color.BLACK);
+        }
+    }
   // **********
 }
