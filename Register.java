@@ -471,5 +471,35 @@ private void RollNumTextFocusLost(java.awt.event.FocusEvent evt) {
     }
 }
 
+      /**
+ * Event handler for the focus gained event on the IDNumText field.
+ * If the current text in the IDNumText field is "ID No.," it clears the text,
+ * setting it to an empty string, and changes the text color to black. This behavior
+ * provides a cleaner user experience by removing the default placeholder text
+ * when users begin typing the ID number.
+ *
+ */
+private void IDNumTextFocusGained(java.awt.event.FocusEvent evt) {
+    if (IDNumText.getText().equals("ID No.")) {
+        IDNumText.setText("");
+        IDNumText.setForeground(Color.BLACK);
+    }
+}
+
+/**
+ * Event handler for the focus lost event on the IDNumText field.
+ * If the IDNumText field is left empty, it sets the text to the default
+ * placeholder "ID No." and changes the text color to a subdued shade (100, 100, 100).
+ * This ensures a visual cue for users to recognize the ID number input field,
+ * especially if they didn't enter any text.
+ *
+ */
+private void IDNumTextFocusLost(java.awt.event.FocusEvent evt) {
+    if (IDNumText.getText().equals("")) {
+        IDNumText.setText("ID No.");
+        IDNumText.setForeground(new Color(100, 100, 100));
+    }
+}
+
   // **********
 }
