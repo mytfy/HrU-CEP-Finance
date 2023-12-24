@@ -51,5 +51,16 @@ public class Login extends javax.swing.JFrame {
         password.setBackground(new Color(0, 0, 0, 0));
         jPanel1.add(password);
         password.setBounds(580, 304, 250, 30);
+
+        // customize exit button
+        exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        exit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                exitMouseClicked(evt);
+            }
+        });
+        jPanel1.add(exit);
+        exit.setBounds(840, 0, 30, 40);
+        
     }
 }
