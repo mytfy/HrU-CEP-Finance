@@ -247,6 +247,21 @@ public class Register extends javax.swing.JFrame {
         pack();
     }
 
+        /**
+    * Event handler for the exit label's mouse click.
+    * Displays a confirmation dialog asking the user if they want to close the Registration Form.
+    * If the user selects 'Yes', the form is disposed of, effectively closing the application.
+    *
+    
+    */
+
+    private void exitMouseClicked(java.awt.event.MouseEvent evt) {
+        if (JOptionPane.showConfirmDialog(frame, "Do you want to Close?", "Close Registation Form",
+                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+            this.dispose();
+        }
+    }
+
       
   // **********
 }
