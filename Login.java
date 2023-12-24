@@ -62,5 +62,16 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(exit);
         exit.setBounds(840, 0, 30, 40);
         
+        // customzie minimize button
+        minimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        minimize.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                minimizeMouseClicked(evt);
+            }
+        });
+        jPanel1.add(minimize);
+        minimize.setBounds(800, 0, 30, 40);
+
+        
     }
 }
