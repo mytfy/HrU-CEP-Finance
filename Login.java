@@ -105,5 +105,8 @@ public class Login extends javax.swing.JFrame {
      private void exitMouseClicked(java.awt.event.MouseEvent evt) {
         System.exit(0);
     }
-
+// add minimize button listener
+    private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
+        this.setState(JFrame.ICONIFIED);
+    }
 }
