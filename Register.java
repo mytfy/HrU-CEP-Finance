@@ -231,7 +231,7 @@ public class Register extends javax.swing.JFrame {
         jPanel1.add(RollNumText);
         RollNumText.setBounds(180, 400, 100, 30);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/Register.jpg")));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("Register.jpg")));
         jPanel1.add(background);
         background.setBounds(0, 0, 470, 560);
 
