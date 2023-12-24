@@ -86,5 +86,18 @@ public class Login extends javax.swing.JFrame {
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/Login.jpg")));
         jPanel1.add(background);
         background.setBounds(0, 0, 880, 500);
+
+        // Add height and width to the window/ jpanel
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 881,
+                                javax.swing.GroupLayout.PREFERRED_SIZE));
+        layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 499,
+                                javax.swing.GroupLayout.PREFERRED_SIZE));
+
     }
 }
