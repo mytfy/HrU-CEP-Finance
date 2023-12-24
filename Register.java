@@ -262,6 +262,15 @@ public class Register extends javax.swing.JFrame {
         }
     }
 
+      /**
+ * Event handler for the minimize label's mouse click.
+ * Minimizes the JFrame to the system tray when the label is clicked.
+ *
+ */
+
+    private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {
+        this.setState(JFrame.ICONIFIED);
+    }
       
   // **********
 }
