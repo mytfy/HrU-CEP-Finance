@@ -21,4 +21,17 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField userid;
     // End of variables declaration
+
+    // add init components method
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        userid = new javax.swing.JTextField();
+        password = new javax.swing.JPasswordField();
+        exit = new javax.swing.JLabel();
+        minimize = new javax.swing.JLabel();
+        loinbuttton = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
+
+    }
 }
