@@ -24,7 +24,7 @@ public class DashBoard extends javax.swing.JFrame {
     }
 
           private void initComponents() {
-
+      // Initialize the variables
         jPanel1 = new javax.swing.JPanel();
         exit = new javax.swing.JLabel();
         logout = new javax.swing.JLabel();
@@ -34,11 +34,13 @@ public class DashBoard extends javax.swing.JFrame {
         options = new javax.swing.JLabel();
         dashboard = new javax.swing.JLabel();
 
+      // customize the window
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setLayout(null);
 
+      // customize the exit button
         exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -48,6 +50,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel1.add(exit);
         exit.setBounds(770, 460, 30, 30);
 
+      // cutomize logout button
         logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -57,6 +60,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel1.add(logout);
         logout.setBounds(10, 460, 110, 30);
 
+      // cutomize payment button
         payment.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         payment.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -66,6 +70,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel1.add(payment);
         payment.setBounds(390, 350, 180, 30);
 
+      // customzie database button
         Data.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Data.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -75,6 +80,7 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel1.add(Data);
         Data.setBounds(440, 230, 180, 30);
 
+      // customzie register button
         register.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         register.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -84,13 +90,16 @@ public class DashBoard extends javax.swing.JFrame {
         jPanel1.add(register);
         register.setBounds(390, 110, 180, 30);
 
+      // place payment, database and register button in the center
         jPanel1.add(options);
         options.setBounds(90, 70, 600, 380);
 
+      // customize the dashboard with background image
         dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("images/Dashboard.jpg")));
         jPanel1.add(dashboard);
         dashboard.setBounds(0, 0, 811, 499);
 
+      // adjust the width and height
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,6 +110,7 @@ public class DashBoard extends javax.swing.JFrame {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE));
 
+      // pack everything
         pack();
     }
 
@@ -128,7 +138,7 @@ public class DashBoard extends javax.swing.JFrame {
     private void DataMouseClicked(java.awt.event.MouseEvent evt) {
         JOptionPane.showMessageDialog(null, "This option is underdevelopment");
     }
-
+      // unit testing
       public static void main(String args[]) {
         /*
          * Set the Nimbus look and feel
@@ -141,7 +151,7 @@ public class DashBoard extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.ororlogging.Logger.getLogger(DashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(DashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
@@ -158,11 +168,4 @@ public class DashBoard extends javax.swing.JFrame {
             }
         });
     }
-            
-
-
-
-
-
-      
 }
