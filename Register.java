@@ -333,5 +333,22 @@ public class Register extends javax.swing.JFrame {
             EmailText.setForeground(Color.BLACK);
         }
     }
+
+          /**
+    * Event handler for the focus lost event on the EmailText field.
+    * If the EmailText field is left empty, it sets the text to the default
+    * placeholder "Email" and changes the text color to a subdued shade (100, 100, 100).
+    * This ensures a visual cue for users to recognize the email input field,
+    * especially if they didn't enter any text.
+    *
+    */
+
+    private void EmailTextFocusLost(java.awt.event.FocusEvent evt) {
+        if (EmailText.getText().equals("")) {
+            EmailText.setText("Email");
+            EmailText.setForeground(new Color(100, 100, 100));
+        }
+
+    }
   // **********
 }
