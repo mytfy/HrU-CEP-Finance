@@ -38,5 +38,11 @@ public class Login extends javax.swing.JFrame {
         setUndecorated(true);
 
         jPanel1.setLayout(null);
+        // customize username input
+        userid.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20));
+        userid.setBorder(null);
+        userid.setBackground(new Color(0, 0, 0, 0));
+        jPanel1.add(userid);
+        userid.setBounds(580, 190, 250, 30);
     }
 }
