@@ -72,6 +72,14 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(minimize);
         minimize.setBounds(800, 0, 30, 40);
 
-        
+         // customize login button
+        loinbuttton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        loinbuttton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loinbutttonMouseClicked(evt);
+            }
+        });
+        jPanel1.add(loinbuttton);
+        loinbuttton.setBounds(620, 370, 160, 40);
     }
 }
