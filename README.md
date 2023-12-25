@@ -31,3 +31,10 @@ command line:
 ## The credentials of the admin are:
 1. username = "admin"
 2. password = "1234"
+
+# Contributers
+1. Adem Kedir
+2. Bonsa Beker
+3. Adnan Tahir
+4. Abubeker Mohammed
+5. Abdulfetah Suudi
